@@ -2,6 +2,8 @@
   "name": "electron",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "Jamie Ruderman",
+  "description": "Electron debugging",
   "repository": {
     "url": "git+ssh://git@github.com/remoteit/electron.git",
     "type": "git"
@@ -34,7 +36,7 @@
       "perMachine": true,
       "allowElevation": true,
       "deleteAppDataOnUninstall": true,
-      "include": "build/installer.nsh",
+      "include": "installer.nsh",
       "allowToChangeInstallationDirectory": true
     }
   }

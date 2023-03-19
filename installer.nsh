@@ -12,7 +12,7 @@
         FileOpen $8 "$TEMP\remoteit.log" w
     custom_init_log_end:
     FileWrite $8 "$\r$\n$\r$\n________________________________________________$\r$\n"
-    FileWrite $8 "Init ${PKGVERSION} (${__DATE__} ${__TIME__})$\r$\n"
+    FileWrite $8 "Init electron test (${__DATE__} ${__TIME__})$\r$\n"
 
     FileClose $8
 !macroend
@@ -26,7 +26,7 @@
     file_not_found:
         FileOpen $8 "$TEMP\remoteit.log" w
     log_file_end:
-    FileWrite $8 "$\r$\nInstall ${PKGVERSION} (${__DATE__} ${__TIME__})$\r$\n"
+    FileWrite $8 "$\r$\nInstall electron test (${__DATE__} ${__TIME__})$\r$\n"
     FileWrite $8 "Installing Service$\r$\n"    
 
     FileWrite $8 "$\r$\nEnd Install $\r$\n$\r$\n"
@@ -42,7 +42,7 @@
     file_not_found_u:
         FileOpen $8 "$TEMP\remoteit.log" w
     end_of_test_u:
-    FileWrite $8 "$\r$\nStart Remove Files ${PKGVERSION} (${__DATE__} ${__TIME__})$\r$\n"
+    FileWrite $8 "$\r$\nStart Remove Files electron test (${__DATE__} ${__TIME__})$\r$\n"
 
     ; Detect auto-update
     ${If} ${IsUpdated}
