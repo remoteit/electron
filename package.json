@@ -2,6 +2,10 @@
   "name": "electron",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": {
+    "url": "git+ssh://git@github.com/remoteit/electron.git",
+    "type": "git"
+  },
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
